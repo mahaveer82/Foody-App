@@ -4,7 +4,7 @@
 
 **Features:**
 
-* **Unleash your inner gourmand:** Explore a vast array of restaurants and cuisines, easily browseable by price, category, or even your most-craved keyword.
+* **Explore the flavors:** Discover restaurants and cuisines near you, browse by price, category and rating.
 * **Dive deeper into delectable details:** Each restaurant comes with a detailed menu and mouthwatering photos to help you make informed choices.
 * **Find your flavor soulmates:** Discover and connect with other food enthusiasts, share culinary experiences, and explore new tastes together.
 * **Effortless Authentication:** Securely sign in through your favorite third-party app using Auth0, making it easier than ever to start your food adventure.
