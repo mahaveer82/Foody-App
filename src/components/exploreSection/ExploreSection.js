@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "../exploreSection/ExploreSectionStyles.css";
 import { restaurant } from "../Lists";
 import { useRecoilValue } from "recoil";
@@ -11,8 +11,12 @@ import {
 import { Link } from "react-router-dom";
 
 const ExploreSection = () => {
-  const [search, setSearch] = useState("");
 
+  const [search, setSearch] = useState("");
+  const exploreItem = restaurant.filter((item) => search.toLowerCase() === ""? item
+        : item.name.toLowerCase().includes(search));
+
+  
   const coilPrice = useRecoilValue(setAtomPrice);
   const coilRating = useRecoilValue(setAtomRating);
   const coilTime = useRecoilValue(setAtomTime);
@@ -22,7 +26,7 @@ const ExploreSection = () => {
     <div className="max-width explore-section">
       <div className="collection-title">
         <div className="collection-search">
-          <h2>Delivery Restaurant in Banglore</h2>
+          <h1>Search It, Eat It :- That's It!</h1>
           <div className="collection-icon">
             <input
               type="search"
@@ -34,13 +38,7 @@ const ExploreSection = () => {
           </div>
         </div>
         <div className="explore-grid">
-          {restaurant
-            .filter((item) => {
-              return search.toLowerCase() === ""
-                ? item
-                : item.name.toLowerCase().includes(search);
-            })
-            .map((restaurant) => {
+          {exploreItem.map((restaurant) => {
               return (
                 <div className="res-row" key={restaurant.id}>
                   {coilCheckbox.indexOf(true, 0) === -1 &&
@@ -354,7 +352,7 @@ const ExploreSection = () => {
                   )}
                 </div>
               );
-            })}
+          })}
         </div>
       </div>
     </div>

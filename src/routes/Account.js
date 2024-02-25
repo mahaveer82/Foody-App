@@ -31,17 +31,20 @@ const Account = () => {
               className="profile"
             />
           </div>
-          <h1 className="user">John</h1>
-          <div class="top-left">
-            <h1>{quantity}</h1>
-            <h1>Order</h1>
-          </div>
-          <div class="top-right">
-            <h1>{amount}</h1>
-            <h1>Price</h1>
+          <div>
+            <h1 className="user">John</h1>
+            <div class="top-left">
+              <h1>{quantity}</h1>
+              <h1>Order</h1>
+            </div>
+            <div class="top-right">
+              <h1>{amount}</h1>
+              <h1>Price</h1>
+            </div>
           </div>
         </div>
-        <h1 className="h1-text">Your BookMark'S</h1>
+        <div className="wish-container">
+        <h1 className="h1-text">Your Wishlist</h1>
         <div className="main">
         {wish.length === 0 ? (
           <div>
@@ -54,20 +57,20 @@ const Account = () => {
                 <Link to={`/item/${food_cart.id}`}>
                   <img src={food_cart.image} alt={food_cart.name} className="explore-card-image"/>
                 </Link>
-                  <div className="delivery-time">{food_cart.deliveryTime + "min"}</div>
-              </div>
-              <div className="food-name">{food_cart.name}<br/>{food_cart.foodType}</div>
-              <div className="rat-pir">
-                <div className="approx-price">{food_cart.price + "₹"}</div>
-                  <div className="res-rating absolute-center">{food_cart.rating}<i className="fi fi-rr-star absolute-center"></i>
-                </div>
               </div>
               <button className="cart-btn" onClick={() => handleRemoveWish(food_cart)}><i className="fa-solid fa-trash"></i></button>
+              <div className="food-name">{food_cart.name}</div>
+              <div className="rat-pir">
+                <div className="approx-price">{food_cart.price + "₹"}</div>
+                  
+              </div>
             </div>
           ))
         )}
         </div>
+        </div>
       </div>
+
     </>
   );
 };

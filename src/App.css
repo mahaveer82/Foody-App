@@ -1,6 +1,6 @@
 #root{
   --border-white: rgb(232, 232, 232);
-  --zomato-red: #ff7e8b;
+  --zomato-red: rgb(255, 181, 44);
   --inactive-text: #696969;
   --inactive-color: #f8f8f8;
   --primary-bg: rgb(255, 255, 255);
@@ -11,4 +11,3 @@
   --tag-green: #267e3e;
 }
 
- 

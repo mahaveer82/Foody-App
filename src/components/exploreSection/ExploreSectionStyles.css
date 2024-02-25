@@ -1,34 +1,37 @@
-.explore-section{
-    /* border: 1px solid black; */
-    margin-top: 18px;
-}
-
 .explore-grid{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* padding: 10px; */
-    /* margin: 0px; */
-    /* border: 1px solid black; */
 }
 
 .collection-search{
     display: flex;
     justify-content: space-between;
-    padding: 0px;
+    padding: 10px;
 }
 .collection-icon{
     width: 30%;
     height: 40px;
     display: flex;
 }
+.collection-icon input{
+    color: black;
+}
 #collection-input{
     width: 90%;
     text-align: left;
-    padding: 12px;
+    padding: 15px;
     float: right;
-    border: none;
-    background-color: rgb(230, 230, 230);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0.5 solid black;
+    background-color: white;
+}
+#collection-input:focus{
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }
 .fa-solid{
     padding: 10px;
@@ -49,7 +52,7 @@
 
 .explore-card-cover{
     height: 248px;
-    width: 328px;
+    width: 340px;
     border-radius: 15px;
     position: relative;
 }
@@ -74,44 +77,30 @@
     border-radius: 4px;
 }
 
-.res-row{
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 .res-name{
     max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 22px;
-    /* padding: 20px; */
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 500;
     color: var(--heading-text);
-    /* float: left; */
 }
 
 .res-rating{
-    padding: 0px 10px;
     font-size: 15px;
     color: var(--primary-bg);
     background-color: var(--tag-green);
     border-radius: 6px;
-    height: 24px;
+    height: 25px;
 }
 
 .pir-rat{
     float: right;
     text-align: center;
-    /* border: 1px solid black; */
     width: 15%;
     transform: translate(10%, -60%);
     padding: 5px;
-    /* height: 0px;
-    padding-bottom: 60px; */
-    /* font-size: 12px;
-    margin: 3px; */
 }
 
 .res-foodType{
@@ -123,13 +112,13 @@
 }
 
 .res-foodType-tag{
-    margin-right: 4px;
     color: var(--inactive-text);
 }
 
 .approx-price{
     font-size: 15px;
-    color: var(--inactive-text);
+    font-weight: 600;
+    color:black;
 }
 
 .explore-card:hover{

@@ -11,7 +11,7 @@ import NextArrow from "../Carousal/nextArrow";
 import PrevArrow from "../Carousal/prevArrow";
 
 
-const ParticularItem = () => {
+const ParticularCuisines = () => {
   const [current, setCurrent] = useState("");
 
   const { id } = useParams();
@@ -90,7 +90,7 @@ const ParticularItem = () => {
                       className="main-btn"
                       onClick={() => addToWish(item)}
                     >
-                      <i class="fa-regular fa-heart fa-solid"></i>
+                      <i class="fa-regular fa-heart"></i>
                       Wishlist
                     </button>
                   </div>
@@ -108,7 +108,7 @@ const ParticularItem = () => {
         <div className="max-width">
           <div className="collection-title">
             <div className="collection">
-            <h1>{"More " + current}</h1>
+            <h1>{"More "+ current}</h1>
             <p>If Eat Feels You Happy So why are you waiting for??</p>
             </div>
             <br></br>
@@ -135,12 +135,4 @@ const ParticularItem = () => {
   );
 };
 
-export default ParticularItem;
-
-{/* <div className="delivery-item-title">{item.name}</div>
-                    <img src={item.image} className="delivery-item-image" alt={item.name}/> */}
-                    // {item.foodType === current?  
-                    //   <>
-                    //     
-                    //   </>:
-                    // <></>}
+export default ParticularCuisines;

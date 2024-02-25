@@ -6,14 +6,6 @@ import { clearCart } from "../components/redux/ShoppingCart";
 import { toast } from "react-hot-toast";
 
 const orderComponent = {
-  width: "90%",
-  height: "60vh",
-  overflow: "scroll",
-};
-
-const paymentComponent = {
-  width: "45%",
-  height: "90vh",
   overflow: "scroll",
 };
 
@@ -21,16 +13,22 @@ const Orders = () => {
   const { cart } = useSelector((item) => item.user);
   const { amount } = useSelector((carts) => carts.user);
 
+  const dispatch = useDispatch();
+
+
+  
+
   const navigate = useNavigate();
   const handleBack = () => {
     navigate("/cart");
   };
 
-  const dispatch = useDispatch();
 
   const handleClear = () => {
     dispatch(clearCart());
   };
+
+  
 
   const handleCheck = () =>{
     if(cart.length === 0){
@@ -77,6 +75,7 @@ const Orders = () => {
                           className="order-image"
                         />
                         <h3>{orders.name}</h3>
+                        <h3>{orders.quantity}</h3>
                         <h3>{orders.price + "₹"}</h3>
                         <h3>
                           {"Total: " + orders.price * orders.quantity + "₹"}
@@ -89,19 +88,12 @@ const Orders = () => {
             )}
           </div>
         </div>
-        <div className="payment-container" style={paymentComponent}>
-            <h2 className="text-t">Total</h2>
+        <div className="payment-container">
+            <h2 className="text-t">Your Bill</h2>
             <div className="total-container">
-              <div className="divv">
-                <h2 className="totl">SubTotal:- {amount+"₹"}</h2>
-              </div>
-              <br/>
-                <div className="mid-h1">
-                  <h2 className="totl">Tax:- {amount*2/100+"₹"}</h2>
-                </div>
-                <div className="divv">
-                <h2 className="totl">Grand Total:- {amount+(amount*2/100)+"₹"}</h2>
-                </div>
+              <h2 className="totl">SubTotal:- {amount+"₹"}</h2>
+              <h2 className="totl">Tax:- {amount*2/100+"₹"}</h2>  
+              <h2 className="totl">Grand Total:- {amount+(amount*2/100)+"₹"}</h2>
             </div>
             <div className="payment">
                 <h2 className="text-h2">Payment Method</h2>
@@ -110,15 +102,15 @@ const Orders = () => {
                 <input type="radio" className="radio-btn" value="1" name="2"/><label className="label">UPI Payment</label>
             </div>
             <div className="payment">
-                <h2 className="text">Delivery Adress</h2>
+                <h2 className="text">Your Adress</h2>
                 <input type="text" className="input-btn" placeholder="Enter Address..."/>
                 <input type="submit" className="btn-1"/>
                 
             </div>
               
               <div className="button-container">
-                <button className="btn-order" onClick={handleCheck}>Complete Order</button>
-                <button className="btn-order1" onClick={handleCheckCancel}>Cancel Process</button>
+                <button className="btn-order" onClick={handleCheck}>Order Now!</button>
+                <button className="btn-order1" onClick={handleCheckCancel}>Cancel Order!</button>
               </div>
         </div>
       </div>

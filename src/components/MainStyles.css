@@ -1,29 +1,12 @@
 .container-img{
     width: 100%;
-    height: 100vh;
+    height: 88vh;
     position: relative;
-    animation-duration: 2s;
-    animation-name: slidein;
-    /* animation-iteration-count: unset; */
-    animation-direction: normal;
 }
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  }
 
 img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    
 }
 
 .Main-text{
@@ -34,11 +17,11 @@ img{
     height: 30vh;
     background-color: rgb(255, 181, 44);
     border-radius: 5px;
-    padding: 0px 20px;
+    padding: 0px 25px;
 }
 .Main-text h1{
-    font-size: 3.0rem;
-    font-weight: 800;
+    font-size: 2.8rem;
+    font-weight: 600;
     background: #222;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,20 +30,15 @@ img{
     font-size: 1.6rem; 
     color: #222;
     padding: 0.5rem 0 2rem 0;
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-iteration-count: initial;
-    animation-direction: alternate;
 }
 
 .show{
     text-decoration: none;
     background-color: black;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 5px;
     font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 3px;
+    font-weight: bolder;
     color: white;
 }
 

@@ -8,30 +8,21 @@ const Footer = () => {
                     <h1>Dear Foody</h1>
                     <p>Your Taste Our Service</p>
                 </div>
+                
                 <div>
-                    <a href="/">
-                        <i className="fa-brands fa-facebook-square"></i>
+                    <a href="https://github.com/mahaveer82">
+                        <i className="fa-brands fa-github-square"></i>
                     </a>
-                    <a href="/">
+                    <a href="https://instagram.com/mahaveer.jn">
                         <i className="fa-brands fa-instagram-square"></i>
                     </a>
-                    <a href="/">
-                        <i className="fa-brands fa-behance-square"></i>
-                    </a>
-                    <a href="/">
-                        <i className="fa-brands fa-twitter-square"></i>
+                    <a href="https://www.linkedin.com/in/developer-mahaveer-jain/">
+                        <i className="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
             </div>
 
             <div className="bottom">
-                <div>
-                    <h4>Project</h4>
-                    <a href="/">Changelog</a>
-                    <a href="/">Status</a>
-                    <a href="/">License</a>
-                    <a href="/">All Versions</a>
-                </div>
                 <div>
                     <h4>Community</h4>
                     <a href="/">Github</a>
@@ -40,11 +31,13 @@ const Footer = () => {
                     <a href="/">Twitter</a>
                 </div>
                 <div>
-                    <h4>Help</h4>
-                    <a href="/">Support</a>
-                    <a href="/">Troubleshooting</a>
-                    <a href="/">Contact Us</a>
+                    <h4>Address</h4>
+                    <p>12 floor, MG Road, New Complex Vallai, <br></br>Bengluru(Karnatka) India 456667</p>
+                   
+                    <h4>Contact Us</h4>
+                    <p>Tel No. 09123456789</p>
                 </div>
+                
                 <div>
                     <h4>Others</h4>
                     <a href="/">Terms of Service</a>

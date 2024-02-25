@@ -12,20 +12,13 @@ import { Provider } from 'react-redux';
 import store from './components/store';
 import { Toaster } from 'react-hot-toast';
 import { getTotals } from './components/redux/ShoppingCart';
-import { Auth0Provider } from '@auth0/auth0-react';
+import ParticularCuisines from './components/Cart/ParticularCuisines';
 
 function App() {
 
   store.dispatch(getTotals())
   return (
      <div className='App'>
-     <Auth0Provider
-        domain="dev-oo5zryoy57r15usb.us.auth0.com"
-        clientId="hserRkEodNw4qu0BJeAsjCgu5NY9hlDh"
-        authorizationParams={{
-          redirect_uri: window.location.origin
-        }}
-      >
      <Provider store={store}>
         <Routes>
           <Route path="/" element={<Home />}/>
@@ -34,11 +27,11 @@ function App() {
           <Route path="/orders" element={<Orders />}/>
           <Route path="/account" element={<Account/>}/>
           <Route path="/item/:id" element={<ParticularItem/>}/>
+          <Route path="/foodtype/:id" element={<ParticularCuisines/>}/>
           <Route path="/confirm" element={<LastPage/>} />
         </Routes>
         <Toaster position='top-right'/>
       </Provider>
-      </Auth0Provider>
      </div>
   );
 }

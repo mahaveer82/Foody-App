@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../filtertab/popElementstyle.css";
 import { atom, useRecoilState } from "recoil";
+
 export const variety = [
   {
     id: "1",
@@ -180,7 +181,7 @@ const PopElement = () => {
               type="range"
               min="20"
               max="180"
-              step="40"
+              step="20"
               value={price}
               class="myslider"
               id="sliderRange"
@@ -199,7 +200,7 @@ const PopElement = () => {
               type="range"
               min="20"
               max="50"
-              step="10"
+              step="5"
               value={time}
               class="myslider"
               id="sliderRange"
