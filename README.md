@@ -8,7 +8,7 @@
 * **Dive deeper into delectable details:** Each restaurant and cuisine has a detailed menu and mouthwatering photos to help you make informed choices.
 * **Every Food Have Our Detailed Page:** Each Food item can also contain the price, cuisine, and description.
 * **Add To Cart & WishList:** Every item you saved in your wishlist after filtering the food you can easily add to your cart.
-* **Payment page:" Every Item has our prices and the total of your bill payment is also included.
+* **Payment page:** Every Item has our prices and the total of your bill payment is also included.
 
 
 **Built with**
