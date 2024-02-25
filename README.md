@@ -32,3 +32,7 @@
 
 * Browse your favorite food options and explore the exciting culinary world.
 * Place your order and get ready to savor a delightful experience.
+
+
+## Demo
+`https://dear-foody-app.netlify.app/`
